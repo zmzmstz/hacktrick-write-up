@@ -1,0 +1,8 @@
+Ankara'da gerçekleştirdiğimiz 10 ayrı kriminal operasyonda, bağlantısız görünen noktalarda ortaya çıkan Kardeşler Pide Kebap Salonu'nun sürekli yemek poşetleri bulduk. Bu durumu anlamakta zorlandık. Saldırgan yakalanırken telefonda en son '1337' diyerek bağırdı. Muhtemelen bu, onun kod adı. İhtiyacımız olan şey, son bir ay içinde Ankara'da açılmış olan Kardeşler Kebap Pide Salonu'nun bulunması ve bu '1337' sayısının ne anlama geldiğinin ve bir sonraki saldırının nerede gerçekleşeceğinin öğrenilmesi.
+
+EN:
+
+In Ankara, we conducted 10 separate criminal operations. During the operations, we consistently found food bags from Kardeşler Pide Kebab Salon, which appeared unrelated to each other. We couldn't understand this. When the attacker was caught, they shouted '1337' on the phone. I believe this is their code name. What we need is to locate the Kardeşler Kebab Pide Salon, which opened within the last month in Ankara, and find out what '1337' means and where the next attack will take place.
+
+
+Flag : GOP{thesecretwordyoureceived}
