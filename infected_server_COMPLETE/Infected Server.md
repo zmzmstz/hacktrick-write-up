@@ -1,7 +1,7 @@
 First we start by extracting the archive then we can see last edited pam files by sorting by date.
 ![](solution00.png)
-Usually the the timestamp ends with `.000000000` but backdoors can be detected if this part is different from `.000000000`.
-Here this is still the case but the date for backdoored file is very different from legitimate files.
+Usually the timestamp ends with `.000000000` and backdoors can be detected if this part is different from `.000000000`.
+Here this is not the case but the date for backdoored file is very different from legitimate files.
 We can also detect this specific backdoor using these grep commands:
 https://gist.github.com/bcoles/b66c0116daa1d1d2623e0d2a2795304f
 ![](solution01.png)
