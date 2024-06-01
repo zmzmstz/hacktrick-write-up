@@ -64,9 +64,7 @@ Here we basically hook `System.loadLibrary()` and when a native library loads we
 We then calculate `isPackageInstalledAddr` using static offset of `0x21270`, then we attach an interceptor for this function using the `isPackageInstalledAddr`. by doing this we effectively hooked the function and can change the return value to be whatever we want.<br> 
 Here we check if `args[1]` equals to the string `com.topjohnwu.magisk`, if that's the case we return `0` . If that's not the case we return `1`. <br>
 We basically bypassed all the checks and we can get the flag!
-<br>
 ![](solution08.png)
-<br> 
 ![](solution09.png)
 <br>
 And voila! We got our flag!
