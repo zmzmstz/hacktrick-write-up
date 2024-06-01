@@ -59,10 +59,11 @@ Java.perform(function() {
     }
 })
 ```
-<br>
-Here we basically hook `System.loadLibrary()` and when a native library loads we call `hookNativeFunction()` which basically gets the base address of the native library.<br>
-We then calculate `isPackageInstalledAddr` using static offset of `0x21270`, then we attach an interceptor for this function using the `isPackageInstalledAddr`. by doing this we effectively hooked the function and can change the return value to be whatever we want.<br> 
-Here we check if `args[1]` equals to the string `com.topjohnwu.magisk`, if that's the case we return `0` . If that's not the case we return `1`. <br>
+Here we basically hook `System.loadLibrary()` and when a native library loads we call `hookNativeFunction()` which basically gets the base address of the native library.
+
+We then calculate `isPackageInstalledAddr` using static offset of `0x21270`, then we attach an interceptor for this function using the `isPackageInstalledAddr`. By doing this we effectively hooked the function and can change the return value to be whatever we want.<br> 
+Here we check if `args[1]` equals to the string `com.topjohnwu.magisk`, if that's the case we return `0` . If that's not the case we return `1`. 
+
 We basically bypassed all the checks and we can get the flag!
 
 ![](solution08.png)
