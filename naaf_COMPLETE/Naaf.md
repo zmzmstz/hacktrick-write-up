@@ -1,6 +1,6 @@
 Although we haven't been able to solve the challenge at the time. We have solved it after the event.<br>
 
-First we use jadx to disassemble this app's source code. Thankfully it wasn't obfuscated. Here we can see the app does some sort of network connection using native function `stringFromJNI`.<br>
+First we use jadx to disassemble this app. Thankfully it wasn't obfuscated. Here we can see the app does some sort of network connection using native function `stringFromJNI`.<br>
 ![](solution00.png)
 <br>
 Here we found the native library that holds the logic for this function:<br>

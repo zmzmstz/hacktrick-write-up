@@ -1,6 +1,6 @@
 Although we haven't been able to solve the challenge at the time. We have solved it after the event.<br>
 
-First we use jadx to disassemble this app's source code. Thankfully it wasn't obfuscated. Here we can see there is a check for isDebug field. If we can set this to true we can progress further.<br>
+First we use jadx to disassemble this app. Thankfully it wasn't obfuscated. Here we can see there is a check for isDebug field. If we can set this to true we can progress further.<br>
 ![](solution00.png)
 <br>
 Using apktool we can decompile this apk into a folder, then edit the smali file and finally recompile and sign the apk.<br>
