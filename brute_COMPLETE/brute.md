@@ -4,13 +4,13 @@
 JRS{vhcdulq_kdnodul_vdnolglu}
 ```
 
-şifremizi görünce yine bir önceki soru olan Vigo aklıma geldi ve bunun da bir Vigenère şifresi olabileceğini düşündüm.
+When I saw our password, I thought of the previous question, Vigo, and I thought that this could also be a Vigenère password.
 
-*Sonra Vigo'da daha ayrıntılı olarak anlatılan teknikleri kullanarak keyimizi bulalım.*
+*Let's find our key using the techniques described in more detail in Vigo.
 
-Flag formatımızın GOP{...} şeklinde olduğunu bildiğimiz için kolaylıkla keyimizi bulacağız. "GOP" düz metni ile "JRS" şifreli metni üzerinden Vigenère anahtarımızı hesaplayalım.
+Since we know that our flag format is GOP{...}, we will easily find our key. Let's calculate our Vigenère key based on the plaintext "GOP" and the ciphertext "JRS".
 
-Harflerin Sayısal Değerleri: Her harfi alfabetik sıraya göre sayısal bir değere dönüştürerek başlayalım.
+Numeric Values of Letters: Let's start by converting each letter into a numeric value in alphabetical order.
 
 G = 6
 
@@ -24,16 +24,16 @@ R = 17
 
 S = 18
 
-Anahtar Hesaplama: Şifreli metinden düz metni çıkartarak anahtarı buluruz ve mod 26 alırız.
+Key Calculation: We find the key by subtracting the plaintext from the ciphertext and take mod 26.
 
-İlk harf: J (9) - G (6) = 3 --> D
-İkinci harf: R (17) - O (14) = 3 --> D
-Üçüncü harf: S (18) - P (15) = 3 --> D
-Anahtar Sonucu: Anahtar harflerimiz **DDD** olarak bulunur.
+First letter J (9) - G (6) = 3 --> D
+Second letter: R (17) - O (14) = 3 --> D
+Third letter: S (18) - P (15) = 3 --> D
+Key Result: Our key letters are found as **DDD**.
 
-Sonuç olarak, Vigenère anahtarı "**DDD**" olacaktır. Bu anahtar kullanılarak "GOP" düz metni "JRS" şifreli metnine çevrilmiştir.
+As a result, the Vigenère key will be "**DDD**". Using this key, the plaintext "GOP" is translated into the ciphertext "JRS".
 
-Bu kısımda yine CyberChef'ten yararlanalım.
+Let's use CyberChef again for this part.
 
 ![alt text](brute.png)
-İşte flagimiz hazır.
+Here's our flag.
